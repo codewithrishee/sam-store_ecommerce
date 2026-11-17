@@ -1,0 +1,18 @@
+
+Options -MultiViews
+RewriteEngine On
+RewriteBase /project3/
+
+# Redirect index.php to clean home URL
+RewriteCond %{THE_REQUEST} \s/+project3/index\.php[\s?] [NC]
+RewriteRule ^index\.php$ /project3/ [R=301,L]
+
+# Hide .php extension
+RewriteCond %{THE_REQUEST} \s/+project3/(.+?)\.php(?:[\s?]) [NC]
+RewriteRule ^(.+?)\.php$ $1 [R=301,L,NE]
+
+# Internally load PHP files
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.+?)/?$ $1.php [L]

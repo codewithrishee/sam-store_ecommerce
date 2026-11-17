@@ -1,0 +1,224 @@
+/* GOOGLE FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f1f5f9;
+    overflow-x:hidden;
+}
+
+/* MAIN CONTENT */
+.main-content{
+
+    margin-left:280px;
+
+    width:calc(100% - 280px);
+
+    min-height:100vh;
+
+    padding:30px;
+}
+
+/* PAGE CARD */
+.page-card{
+
+    background:#fff;
+
+    border-radius:24px;
+
+    padding:30px;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,0.04);
+}
+
+/* PAGE TITLE */
+.page-title{
+
+    font-size:28px;
+
+    font-weight:700;
+
+    margin-bottom:25px;
+
+    color:#0f172a;
+}
+
+/* FORM LABEL */
+.form-label{
+
+    font-weight:600;
+
+    margin-bottom:8px;
+
+    color:#334155;
+}
+
+/* INPUTS */
+.form-control,
+.form-select{
+
+    height:52px;
+
+    border-radius:14px;
+
+    border:1px solid #e2e8f0;
+
+    padding:12px 16px;
+
+    box-shadow:none !important;
+
+    transition:0.3s;
+}
+
+/* TEXTAREA */
+textarea.form-control{
+
+    height:auto;
+}
+
+/* FOCUS */
+.form-control:focus,
+.form-select:focus{
+
+    border-color:#38bdf8;
+
+    box-shadow:
+    0 0 0 4px rgba(56,189,248,0.15) !important;
+}
+
+/* BUTTON */
+.btn-admin{
+
+    background:#0f172a;
+
+    color:#fff;
+
+    border:none;
+
+    border-radius:14px;
+
+    padding:14px 28px;
+
+    font-weight:600;
+
+    transition:0.3s;
+}
+
+.btn-admin:hover{
+
+    background:#38bdf8;
+
+    color:#000;
+
+    transform:translateY(-3px);
+}
+
+/* IMAGE PREVIEW */
+.preview-img{
+
+    width:100%;
+
+    height:180px;
+
+    object-fit:cover;
+
+    border-radius:18px;
+
+    margin-top:15px;
+
+    border:2px dashed #cbd5e1;
+
+    display:none;
+}
+
+/* TABLE */
+.table-card{
+
+    background:#fff;
+
+    border-radius:24px;
+
+    overflow:hidden;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,0.04);
+}
+
+.table thead th{
+
+    background:#f8fafc;
+
+    padding:18px;
+
+    border:none;
+
+    color:#64748b;
+
+    font-size:13px;
+
+    text-transform:uppercase;
+}
+
+.table tbody td{
+
+    padding:18px;
+
+    vertical-align:middle;
+
+    border-bottom:1px solid #f1f5f9;
+}
+
+/* BADGE */
+.badge-admin{
+
+    background:#dcfce7;
+
+    color:#166534;
+
+    padding:8px 14px;
+
+    border-radius:30px;
+
+    font-size:12px;
+
+    font-weight:600;
+}
+
+/* MOBILE */
+@media(max-width:991px){
+
+    .main-content{
+
+        margin-left:90px;
+
+        width:calc(100% - 90px);
+
+        padding:20px;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .page-card{
+
+        padding:20px;
+    }
+
+    .page-title{
+
+        font-size:22px;
+    }
+
+}
+
+.main-content {
+    padding-top: 100px !important;
+}
